@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  @apply bg-white
+}
+.container {
+  @apply mx-auto px-14 w-full
+}
+button.primary,
+a.primary {
+  @apply px-6 py-1.5 bg-kbcyan text-white rounded-md hover:bg-[#4cb4d9] transition-all focus:scale-95
+}
+
+button.secondary,
+a.secondary {
+  @apply px-6 py-1.5 border-[1px] rounded-md border-kbcyana hover:bg-[#fcfcfc] transition-all focus:scale-95
+}
+
+/* a {
+  @apply 
+} */
+h2.title{
+  @apply font-semibold text-2xl my-3
+}
+h1.title{
+  @apply font-semibold text-3xl my-3
+}
+.hero h1{
+  @apply text-5xl font-bold
+}
+
+.thebest *{
+  @apply text-white
+}
+.thebest {
+  @apply py-8 w-full bg-kbcyan mb-10
+}
+.thebest .cret {
+  @apply col-span-12 md:col-span-6 flex items-center gap-4 my-2
+}
+
+.cours {
+  @apply col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 bg-[#F3F3F3] rounded-lg overflow-hidden
+}
+.cours img{
+  @apply aspect-video object-cover w-full
+}
+.cours h3 {
+  @apply text-lg font-semibold
+}
+
+.spon{
+  @apply col-span-4 p-1 md:p-10 md:col-span-3 lg:col-span-2
+}
+
+.chose .card {
+  @apply p-10 rounded-lg col-span-12 md:col-span-6 max-w-sm shadow-2xl
+}
+
+.chose .card img{
+  @apply h-48 w-full object-cover
+}
+.img-rounded img{
+  @apply aspect-square rounded-full object-cover
+}
+
+.sidebar {
+  @apply h-[calc(100vh-98px)] w-16 md:w-72 border-r-2 px-3 md:px-8 my-2 flex flex-col flex-shrink-0
+}
+.sidebar a {
+  @apply capitalize flex items-center justify-center md:justify-start gap-4 text-[17px] w-full md:px-4 py-2 rounded-lg
+}
+.sidebar a span {
+  @apply hidden md:block
+}
+.sidebar a.active{
+  @apply bg-[#D1F5FF]
+}
+.sidebar a i {
+  @apply text-[20px]
+}
+
+.dashboard {
+  @apply flex
+}
+
+.dashboard .student-card{
+  @apply rounded-lg p-8 shadow-lg col-span-12 xl:col-span-6 grid grid-cols-12 gap-4
+}
+
+.dashboard .student-card.add{
+  @apply flex justify-center items-center border-kbcyan border-2 cursor-pointer
+}
+
+.dashboard .fire{
+  @apply col-span-4 flex justify-between items-center
+}
+
+.dashboard .fire {
+  @apply text-xs rounded-lg border-[#D1F5FF] border-[1px] p-2 bg-[#F6F6F6]
+}
+
+.dashboard .fire img{
+  @apply w-4
+}
+
+.adult-student a{
+  @apply flex-grow text-center h-full  py-4
+}
+
+.adult-student a.active{
+  @apply border-b-2 border-kbcyan
+}
+
+main {
+  @apply z-10 
+}
+
